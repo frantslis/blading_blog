@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>fr8nts.session log // Aggressive Inline Skating</title>
+<meta name="description" content="A personal log of aggressive inline skating sessions, tricks, and progress.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    ROLLING SINCE 2023 &nbsp;//&nbsp; NO CRUTCH, NO CUT &nbsp;//&nbsp; EVERY SESSION LOGGED, CLEAN OR NOT &nbsp;//&nbsp; GRIND. FALL. REWIND. REPEAT &nbsp;//&nbsp; ROLLING SINCE 2023 &nbsp;//&nbsp; NO CRUTCH, NO CUT &nbsp;//&nbsp; EVERY SESSION LOGGED, CLEAN OR NOT &nbsp;//&nbsp; GRIND. FALL. REWIND. REPEAT &nbsp;//&nbsp;
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-top">
+      <div class="tape-label">
+        <h1 class="site-title"><span class="rec-dot"></span>fr8nts<br><span>session_log</span></h1>
+        <p class="site-subtitle">Aggressive Inline &mdash; Progress, Falls, Footage</p>
+      </div>
+
+      <div class="header-mascot" aria-hidden="true">
+        <svg viewBox="0 0 200 190" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <!-- speed lines -->
+          <line x1="4" y1="70" x2="34" y2="70" style="stroke:var(--steel-dim)" stroke-width="4" stroke-linecap="round"/>
+          <line x1="0" y1="90" x2="26" y2="90" style="stroke:var(--steel-dim)" stroke-width="4" stroke-linecap="round"/>
+          <line x1="8" y1="110" x2="30" y2="110" style="stroke:var(--steel-dim)" stroke-width="4" stroke-linecap="round"/>
+
+          <!-- back arm -->
+          <path d="M118 78 L146 62 L166 68" style="stroke:var(--concrete)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- back leg (extended) -->
+          <path d="M108 118 L70 140 L46 152" style="stroke:var(--concrete)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- back skate wheels -->
+          <circle cx="46" cy="160" r="5" style="fill:var(--matrix-green)"/>
+          <circle cx="60" cy="160" r="5" style="fill:var(--matrix-green)"/>
+          <circle cx="74" cy="160" r="5" style="fill:var(--matrix-green)"/>
+          <line x1="40" y1="153" x2="80" y2="153" style="stroke:var(--concrete)" stroke-width="6" stroke-linecap="round"/>
+
+          <!-- torso -->
+          <path d="M124 60 L108 118" style="stroke:var(--concrete)" stroke-width="8" stroke-linecap="round"/>
+
+          <!-- front leg (bent) -->
+          <path d="M108 118 L132 138 L128 158" style="stroke:var(--concrete)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- front skate wheels -->
+          <circle cx="118" cy="166" r="5" style="fill:var(--matrix-green)"/>
+          <circle cx="132" cy="166" r="5" style="fill:var(--matrix-green)"/>
+          <circle cx="146" cy="166" r="5" style="fill:var(--matrix-green)"/>
+          <line x1="112" y1="159" x2="152" y2="159" style="stroke:var(--concrete)" stroke-width="6" stroke-linecap="round"/>
+
+          <!-- front arm -->
+          <path d="M120 66 L96 84 L84 104" style="stroke:var(--concrete)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- head -->
+          <circle cx="132" cy="42" r="18" style="stroke:var(--concrete)" stroke-width="7"/>
+          <!-- helmet stripe -->
+          <path d="M117 36 Q132 26 147 36" style="stroke:var(--matrix-green)" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat"><div class="stat__value" id="stat-total">000</div><div class="stat__label">Entries logged</div></div>
+        <div class="stat"><div class="stat__value" id="stat-videos">000</div><div class="stat__label">Video clips</div></div>
+        <div class="stat"><div class="stat__value" id="stat-latest">--</div><div class="stat__label">Last session</div></div>
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <a href="index.html">ALL ENTRIES</a>
+      <a href="#latest">LATEST</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="rack" id="rack" aria-live="polite"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    LOGGED WITH LOVE AND RESPECT &mdash; UPDATED CONSTANTLY &mdash; NO ALGORITHM, JUST ROLLING
+  </div>
+</footer>
+
+<script src="posts.js"></script>
+<script src="script.js"></script>
+<script>renderHomepage();</script>
+</body>
+</html>
