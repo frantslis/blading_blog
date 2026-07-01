@@ -11,6 +11,7 @@
   title     — session name, keep it short and punchy
   date      — "YYYY-MM-DD"
   spot      — where it happened (skatepark, street spot, city — whatever)
+  category  — "vlog" | "edit" | "session" | "review" | "interview" | "guide"
   trick     — the trick/line tag, shows as a stamped label (optional, "" to skip)
   type      — "video" | "photo" | "text"
   youtubeId — only if type is "video". Just the ID from the YouTube URL
@@ -27,6 +28,7 @@ const POSTS = [
     title: "Back to flat setup on mesmers",
     date: "2026-07-01",
     spot: "VDNG, Kyiv",
+    category: "session",
     trick: "soul, mizu, p-star, frontside",
     type: "video",
     youtubeId: "CifZCxz3giQ",
@@ -40,6 +42,7 @@ const POSTS = [
     title: "fr8nts - street episode 1",
     date: "2025-11-15",
     spot: "Kyiv street",
+    category: "edit",
     trick: "soul, mizu, p-star, frontside",
     type: "video",
     youtubeId: "Q8izGN1RSzA",
@@ -55,6 +58,7 @@ const POSTS = [
     title: "New Frame Setup — First Impressions",
     date: "2026-06-18",
     spot: "Home setup",
+    category: "review",
     trick: "",
     type: "photo",
     youtubeId: "",
@@ -72,6 +76,7 @@ const POSTS = [
     title: "F®@N+$ Li$ - Bå$ї©~36",
     date: "2025-08-30",
     spot: "Kyiv street",
+    category: "vlog",
     trick: "",
     type: "video",
     youtubeId: "syXHBUIfjrk",

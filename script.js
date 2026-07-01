@@ -62,7 +62,7 @@ function renderHomepage() {
       ${cardMediaHtml(post)}
       <div class="card__body">
         <h2 class="card__title">${escapeHtml(post.title)}</h2>
-        <div class="card__meta">${formatDate(post.date)}${post.spot ? " // " + escapeHtml(post.spot) : ""}</div>
+        <div class="card__meta">${formatDate(post.date)}${post.spot ? " // " + escapeHtml(post.spot) : ""}${post.category ? " // " + escapeHtml(post.category).toUpperCase() : ""}</div>
         ${post.trick ? `<span class="card__trick">${escapeHtml(post.trick)}</span>` : ""}
       </div>
     </a>
@@ -107,6 +107,7 @@ function renderPost() {
     <div class="post-meta">
       <span>${formatDate(post.date)}</span>
       ${post.spot ? `<span>SPOT: <strong>${escapeHtml(post.spot)}</strong></span>` : ""}
+      ${post.category ? `<span>CATEGORY: <strong>${escapeHtml(post.category).toUpperCase()}</strong></span>` : ""}
       ${post.trick ? `<span>TRICK: <strong>${escapeHtml(post.trick)}</strong></span>` : ""}
       <span>TYPE: <strong>${typeLabel(post.type)}</strong></span>
     </div>
